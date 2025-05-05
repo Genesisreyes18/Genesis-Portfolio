@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Reyes | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <canvas id="background-canvas"></canvas>
+    
+    <div class="loading-screen">
+        <div class="loading-content">
+            <h1>Genesis Reyes</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <button class="start-button">Start</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">Genesis Reyes</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="work">Work</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <div class="home-content">
+                <h1 class="title-large">Creative<br>Developer</h1>
+                <p class="subtitle">Crafting immersive digital experiences</p>
+                <button class="cta-button" data-page="work">View Work</button>
+            </div>
+        </section>
+        <section id="work" class="page">
+            <div class="work-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="naturewebsite.png" alt="E-Commerce Platform Screenshot">
+                        <div class="project-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A modern shopping experience with seamless checkout</p>
+                        </div>
+                    </div>
+                    <button class="view-button">View</button>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="catculus.png" alt="Travel App Screenshot">
+                        <div class="project-overlay">
+                            <h3>Travel App</h3>
+                            <p>Interactive journey planner with 3D visualizations</p>
+                        </div>
+                    </div>
+                    <button class="view-button">View</button>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="echoes.png" alt="Digital Agency Screenshot">
+                        <div class="project-overlay">
+                            <h3>Digital Agency</h3>
+                            <p>Brand identity and website for a creative studio</p>
+                        </div>
+                    </div>
+                    <button class="view-button">View</button>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="hungergames.png" alt="Music Visualizer Screenshot">
+                        <div class="project-overlay">
+                            <h3>The Hunger Games</h3>
+                            <p>Audio-reactive 3D experience for artists</p>
+                        </div>
+                    </div>
+                    <button class="view-button">View</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a creative developer focused on building immersive digital experiences that blend design and technology. With expertise in 3D graphics, interactive animations, and frontend development, I create memorable websites and applications.</p>
+                    <p>My approach combines technical precision with artistic vision, resulting in projects that are both visually stunning and functionally robust.</p>
+                    <button class="contact-button">Contact Me</button>
+                </div>
+                <div class="about-image">
+                    <img src="genesis.jpeg" alt="About">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="project-modal">
+        <div class="modal-content">
+            <button class="close-modal">×</button>
+            <div class="modal-body">
+                <h2 class="modal-title">Project Title</h2>
+                <div class="modal-image">
+                    <!-- Image will be inserted here via JavaScript -->
+                </div>
+                <div class="modal-description">
+                    <p>Project description will appear here.</p>
+                </div>
+                <div class="modal-details">
+                    <div class="detail">
+                        <h4>Role</h4>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="detail">
+                        <h4>Year</h4>
+                        <p>2023</p>
+                    </div>
+                    <div class="detail">
+                        <h4>Technologies</h4>
+                        <p>HTML, CSS, JavaScript, Three.js</p>
+                    </div>
+                </div>
+                <a href="#" class="visit-site">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
