@@ -389,13 +389,6 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Close modal button
         closeModalButton.addEventListener('click', hideProjectModal);
-        
-        // Contact button
-        if (contactButton) {
-            contactButton.addEventListener('click', () => {
-                alert('Contact form would open here. This is a placeholder for the demo.');
-            });
-        }
     }
     
     // Start the application
